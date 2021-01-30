@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+    <title>Document</title>
+</head>
+<body>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" class="media-object  img-responsive img-thumbnail"></img>
+
+   <div class="card-body">
+    <form action="/" method="POST">
+        <div class="form-group">
+                  <label for="id">Cep</label>
+                  <input class="form-control" type="text" name="id" id="id">
+                  <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+          </div>
+    </form>
+</div>
+
+<div class="container">
+    <div class="card mt-2 mb-2">
+        <div class="card-body ">
+            <h5>Resultado Pokemon</h5>
+              <strong><%= dado.id %></strong><br>
+        </div>
+    </div>
+    <a href="/" class="btn btn-outline-dark">Procurar outro Pokémon</a>
+</div>
+   
+</body>
+</html>
